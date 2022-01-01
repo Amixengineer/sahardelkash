@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql, StaticQuery } from 'gatsby';
 import styled from 'styled-components';
 import { AiOutlineHome } from 'react-icons/ai';
 import { BsShop, BsCart3 } from 'react-icons/bs';
@@ -59,6 +59,8 @@ const StickyNavBottomForMobile = styled.nav`
     }
   }
 `;
+
+const navigationData = graphql``;
 export default function Navigation() {
   const activePageRef = useRef();
   const handleActivePage = ({ currentTarget }) => {
