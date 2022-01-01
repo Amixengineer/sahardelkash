@@ -8,14 +8,17 @@ const Typography = createGlobalStyle`
   @font-face {
     font-family: 'martel';
     src: url(${martel});
+    font-display: swap;
   }
   @font-face {
     font-family: 'nunito';
     src: url(${nunito});
+    font-display: swap;
   }
   @font-face {
     font-family: 'quando';
     src: url(${quando});
+    font-display: swap;
   }
 
   html {font-size: 62.5%;} /*10px*/
@@ -51,6 +54,10 @@ const Typography = createGlobalStyle`
   h5 {font-size: 1.25rem;}
 
   small, .text_small {font-size: 0.8rem;}
+
+  a {
+    font-family: "nunito", sans-serif;
+  }
 `;
 
 export default Typography;
